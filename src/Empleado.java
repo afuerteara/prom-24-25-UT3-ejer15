@@ -12,8 +12,10 @@ public class Empleado {
     }
 
     public void evaluarDesempeno(){
-        if (this.puntosTrabajo >= 80 && this.puntosActitud >= 80) {
+        if (this.puntosTrabajo >= 80 && this.puntosTrabajo <90 && this.puntosActitud >= 80) {
             System.out.println("El desempeño de " +this.nombre +" es EXCELENTE");
+        } else if (this.puntosTrabajo >=90  && this.puntosActitud >= 80) {
+            System.out.println("El desempeño de " +this.nombre +" es EXCELENTE, ¡Bono aprobado!");
         } else if (this.puntosTrabajo >= 70 && this.puntosTrabajo <80 && this.puntosActitud >= 70) {
             System.out.println("El desempeño de " +this.nombre +" es BUENO");
         } else if (this.puntosTrabajo < 70 && this.puntosActitud >= 70 ) {
